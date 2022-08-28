@@ -42,10 +42,10 @@ const displayMealDetail = meal => {
     const createdetail = document.createElement('div');
     createdetail.classList.add('card');
     createdetail.innerHTML = `
-        <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
+        <h4 class="p-2 mx-auto my-2 ">Details of food</h4>
+        <img src="${meal.strMealThumb}" style="height:30vh" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">${meal.strMeal}</h5>
-            <p class="card-text">${meal.strInstructions.slice(0, 200)}</p>
+            <h5 class="card-title text-center">${meal.strMeal}</h5>
             
         </div>`
     detailContainer.appendChild(createdetail);

@@ -16,23 +16,21 @@
 </head>
 
 <body>
-    <header>
-        <h3>Get Your meal</h3>
+    <header class="text-center p-4 bg-dark text-white">
+        <h3 class="fs-1 text-uppercase">Get Your meal</h3>
     </header>
     <main>
-        <section class="h-50">
-            <h4>Details of food</h4>
-            <div class="h-25" id="detail-container" style="width: 18rem;">
-
-            </div>
-        </section>
-        <section class="text-center d-flex justify-content-center align-content-center">
+        <section class="text-center d-flex justify-content-center align-content-center my-3">
             <input href="searchbtn" class="p-2 rounded m-1" type="text" id="search-field"
                 placeholder="Search your food...">
             <button id="searchbtn" class="btn btn-info p-2" onclick="searchFood()">Search</button>
         </section>
+        <section class="h-50">
+            <div class="h-25" id="detail-container" style="width: 18rem;">
+            </div>
+        </section>
         <section class="container">
-            <h2>my meal</h2>
+            <h2>Foods</h2>
             <div id="meal-container" class="row row-cols-1 row-cols-md-3 g-4">
 
             </div>
